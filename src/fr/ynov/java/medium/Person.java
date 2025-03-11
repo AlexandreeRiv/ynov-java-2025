@@ -33,8 +33,13 @@ public class Person {
 
     public static void main(String[] args) {
 
+        System.out.println("vous avez " + getAge() + " ans");
+    }
 
+    public static int getAge() {
         // create a Person
+
+
         Person moi = new Person( "Alexandre" , "2004-06-02" , "male" , 170 , 90 , Nationality.France );
         //transform the string by a Localdate
         LocalDate newBirthDate = LocalDate.parse(moi.getBirthDate());
@@ -44,6 +49,6 @@ public class Person {
         Period period = Period.between(newBirthDate, date);
 
 
-        System.out.println("vous avez " + period.getYears() + " ans");
+        return period.getYears();
     }
 }
