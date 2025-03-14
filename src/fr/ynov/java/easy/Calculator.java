@@ -2,7 +2,7 @@ package fr.ynov.java.easy;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class    Calculator {
     public static void main(String[] args) {
         if (args.length < 2) {
             System.out.println("Please enter correct number");

@@ -11,13 +11,14 @@ public class Quality {
         this.name = name;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Quality obj1 = new Quality(1 , "Alexandre");
         Quality obj2 = new Quality(1 , "Alexandre");
 
+        System.out.println(obj1.equals(obj2));
         System.out.println(obj1.hashCode());
-
+        System.out.println(obj2.hashCode());
     }
 
     @Override
